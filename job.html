@@ -42,6 +42,7 @@
             color: #3E4551;
         }
 
+
     </style>
 
 </head>
@@ -60,13 +61,13 @@
                     <ul class="navbar-nav mr-auto">
 
                        <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Início<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link">Para quem procura Jobs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="para_hospedes.html">Para quem procura profissionais</a>
+                            <a class="nav-link" href="#">Para quem procura profissionais</a>
 
                         </li>
                     </ul>
@@ -76,7 +77,20 @@
         <!--/.Navbar-->
     </header>
     <div class="container">
-    {% block content %}{% endblock content %}
+      <h2 style="margin-top:15px;text-align:center;">Jobs disponíveis:</h2>
+      <!-- JOB -->
+      <hr/>
+      <div class="row">
+        <div class="col-md-10">
+          <h3>Título do job aqui</h3>
+          <b><p>Empresa: XPTO</p></b>
+          <b><p>Tipo do Job: Freela ou Vaga</p></b>
+        </div>
+        <div class="col-md-2">
+          <a href="#"><button type="button" class="btn btn-success">SAIBA MAIS</button></a>
+        </div>
+      </div>
+      <hr/>
     </div>
     <!--Footer-->
     <footer class="page-footer center-on-small-only footer-content">

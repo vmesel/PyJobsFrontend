@@ -14,6 +14,7 @@
     <!-- Material Design Bootstrap -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.1/css/mdb.min.css" rel="stylesheet">
+    
     <style rel="stylesheet">
         /* TEMPLATE STYLES */
 
@@ -60,12 +61,12 @@
                     <ul class="navbar-nav mr-auto">
 
                        <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link">Para quem procura Jobs</a>
+                        <a class="nav-link" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link">Para quem procura Jobs</a>
+                        </li>
+                        <li class="nav-item active">
                             <a class="nav-link" href="para_hospedes.html">Para quem procura profissionais</a>
 
                         </li>
@@ -76,8 +77,50 @@
         <!--/.Navbar-->
     </header>
     <div class="container">
-    {% block content %}{% endblock content %}
+      <section id="cadastro" style="margin-top:10px;">
+        <center><h2>Cadastre um job no PyJobs</h2></center>
+        <center><p>Achar o Pythonista para seu job nunca foi tão fácil quanto agora, nós cuidaremos de toda a parte de divulgação para você!</p></center>
+        <div class="alert alert-success" id="msg_sucesso"> <!-- style="display:none;">-->
+          <strong>Sucesso!</strong> Sua vaga foi cadastrada com sucesso.
+        </div>
+      <form action="">
+        <div class="form-group">
+          <label for="nome-empresa">Título do Job:</label>
+          <input type="text" class="form-control" id="titulo-vaga" aria-describedby="titulo-vaga" placeholder="Título da vaga">
+        </div>
+        <div class="form-group">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input">
+            Esta vaga é um freela?
+          </label>
+          <small id="email" class="form-text text-muted">Só preencha este campo caso este job seja um freela!</small>
+        </div>
+        <div class="form-group">
+          <label for="nome-empresa">Nome da Empresa:</label>
+          <input type="text" class="form-control" id="nome-empresa" aria-describedby="nome-empresa" placeholder="Nome da Empresa">
+        </div>
+        <div class="form-group">
+          <label for="email">Endereço de email:</label>
+          <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Endereço de email">
+          <small id="email" class="form-text text-muted">Nós usaremos este email para contato.</small>
+        </div>
+        <div class="form-group">
+          <label for="email">Link para o site:</label>
+          <input type="url" class="form-control" id="link-empresa" aria-describedby="link-empresa" placeholder="Link para o site">
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Descrição da vaga:</label>
+            <textarea class="form-control" id="descricao-vaga" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleTextarea">Requisitos da vaga:</label>
+            <textarea class="form-control" id="requisitos-vaga" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Job</button>
+      </form>
+      </section>
     </div>
+
     <!--Footer-->
     <footer class="page-footer center-on-small-only footer-content">
 
