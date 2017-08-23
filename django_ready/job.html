@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+{%block title%}PyFreelas - {{job.titulo}}!{%endblock title%}
+{%block ptitle%}PyFreelas - {{job.titulo}}!{%endblock ptitle%}
+<h2 style="margin-top:15px;text-align:center;"><b>{{job.tipo}}</b> - {{job.titulo}}</h2>
+<h6 style="text-align:center;">{{job.empresa}}</h6>
+<!-- JOB -->
+<hr/>
+<div class="row">
+    <a href="#"><button type="button" class="btn btn-success">CANDIDATE-SE AO JOB</button></a> <!-- Abre modal -->
+    <a href="#"><button type="button" class="btn btn-info">COMPARTILHAR NO FACEBOOK</button></a>
+</div>
+<hr/>
+<div>
+  <h4>Descrição:</h4>
+    <p>
+      {{job.descricao|linebreaks}}
+    </p>
+</div>
+<div>
+  <h4>Requisitos:</h4>
+    <p>
+      {{job.requisitos|linebreaks}}
+    </p>
+</div>
+</div>

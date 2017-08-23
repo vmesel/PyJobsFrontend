@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+{%block title%}PyFreelas - Cadastre um job!{%endblock title%}
+{%block ptitle%}PyFreelas - Cadastre um job!{%endblock ptitle%}
+<section id="cadastro" style="margin-top:10px;">
+  <center><h2>Cadastre um job no PyJobs</h2></center>
+  <center><p>Achar o Pythonista para seu job nunca foi tão fácil quanto agora, nós cuidaremos de toda a parte de divulgação para você!</p></center>
+  {{csrf_token}}
+  {{form}}
+</section>
+</div>

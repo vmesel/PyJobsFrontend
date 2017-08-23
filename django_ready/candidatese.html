@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+{%block title%}PyFreelas - Candidate-se ao Job!{%endblock title%}
+{%block ptitle%}PyFreelas - Candidate-se ao Job!{%endblock ptitle%}
+<section id="cadastro" style="margin-top:10px;">
+  <center><h2>Candidate-se ao Job!</h2></center>
+  {{csrf_token}}
+  {{form}}
+</section>
